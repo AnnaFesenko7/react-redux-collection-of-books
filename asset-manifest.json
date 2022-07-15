@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-redux-collection-of-books/static/css/main.9fbbfa4f.css",
+    "main.js": "/react-redux-collection-of-books/static/js/main.3ab8dcb2.js",
+    "index.html": "/react-redux-collection-of-books/index.html",
+    "main.9fbbfa4f.css.map": "/react-redux-collection-of-books/static/css/main.9fbbfa4f.css.map",
+    "main.3ab8dcb2.js.map": "/react-redux-collection-of-books/static/js/main.3ab8dcb2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fbbfa4f.css",
+    "static/js/main.3ab8dcb2.js"
+  ]
+}
