@@ -1,16 +1,17 @@
 import { createReducer } from '@reduxjs/toolkit';
-import * as bookActions from './books-actions';
+// import * as bookActions from './books-actions';
+import { fetchBooks } from './books-operations';
 export const entitiesReducer = createReducer([], {
-  [bookActions.fetchBooksSuccess]: (_, action) => action.payload,
+  [fetchBooks.fulfilled]: (_, action) => action.payload,
 });
 
 export const errorReducer = createReducer(null, {
-  [bookActions.fetchBooksError]: (_, action) => action.payload,
-  [bookActions.fetchBooksRequest]: () => null,
+  [fetchBooks.rejected]: (_, action) => action.payload,
+  [fetchBooks.pending]: () => null,
 });
 
 export const isLoadingReducer = createReducer(false, {
-  [bookActions.fetchBooksSuccess]: () => false,
-  [bookActions.fetchBooksError]: () => false,
-  [bookActions.fetchBooksRequest]: () => true,
+  [fetchBooks.fulfilled]: () => false,
+  [fetchBooks.rejected]: () => false,
+  [fetchBooks.pending]: () => true,
 });
